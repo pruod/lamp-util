@@ -80,7 +80,7 @@ public class CaffeineOpsImpl implements CacheOps, CachePlusOps {
         if (ifPresent == null) {
             return null;
         }
-        return (T) ifPresent.getIfPresent(key);
+        return (T) ifPresent.getIfPresent(key.getKey());
     }
 
     @Override
